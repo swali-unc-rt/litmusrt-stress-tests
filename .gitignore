@@ -42,3 +42,10 @@
 
 # Makefile binaries
 bin/
+taskgen/taskgen
+
+# Python generates CSV files for overhead data
+python/*.csv
+
+# This is the lock namespace/OD for rtspin
+python/rtspin-locks
