@@ -41,6 +41,4 @@
 *.dwo
 
 # Makefile binaries
-smlpstresstest
-rgtest
-smlpcorrectnesstest
+bin/

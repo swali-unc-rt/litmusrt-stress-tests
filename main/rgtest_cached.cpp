@@ -137,10 +137,12 @@ void groupreleaser(stop_token stopper) {
     LITMUS_CALL_TID( init_rt_thread() );
 
     become_periodic(RGCOST, RGPERIOD);
+    litmus_releasegroup_cache(RGID);
     wait_for_ts_release();
 
     for( int i = 0; i < MAXITER && !stopper.stop_requested(); ++i ) {
-        litmus_releasegroup_release(RGID);
+        //litmus_releasegroup_release(RGID);
+        litmus_releasegroup_release_cached();
         sleep_next_period();
     }
 
