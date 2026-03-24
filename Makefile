@@ -16,6 +16,8 @@ LIBLITMUS_INCLUDE_DIR ?= ../liblitmus/include
 LIBLITMUS_ARCH_INCLUDE_DIR ?= ../liblitmus/arch/x86/include
 LIBLITMUS_LIB_DIR ?= ../liblitmus
 
+FEATHERTRACE_DIR ?= ../feather-trace-tools
+
 # objects to compile
 SRC_DIR = ./src
 OBJ_DIR = ./obj

@@ -18,7 +18,7 @@ def main():
 	Tmin = 10
 	Tmax = 100
 	Tg = 0.1
-	Duration = 30
+	Duration = 300
 	outtaskcsv = 'taskcsv.csv'
 	schedname = 'GSN-EDF'
 	locking_protocol = 'SMLP'
@@ -35,7 +35,7 @@ def main():
 	signal.signal(signal.SIGTERM, cleanup_rtspin)
 
 	#n_array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-	n_array = [10]
+	n_array = [100]
 	#num_tasks = 200
 
 	for num_tasks in n_array: 
